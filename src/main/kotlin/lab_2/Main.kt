@@ -63,6 +63,6 @@ fun getCirclesLocation (circle1: Circle, circle2: Circle) : Location {
     throw Exception("ERROR")
 }
 
-fun getDistanceBetweenPoints (point1: Point, point2: Point) = sqrt(((point1.x-point2.x).pow(2)) + ((point1.y-point2.y).pow(2)))
+fun getDistanceBetweenPoints (point1: Point, point2: Point) = sqrt(((point1.x-point2.x).toDouble().pow(2)) + ((point1.y-point2.y).toDouble().pow(2)))
 
 
