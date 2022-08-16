@@ -93,6 +93,19 @@ fun printFigure3 (w: Int = 13, h: Int = 9) {
       }
 }
 
+fun printFigure4 (w: Int = 13, h: Int = 9) {
+      for (i in 0 until h) {
+            for (j in 0 until w) {
+                  if (abs(sign((w/2 - j).toDouble()) - sign((h/2 - i).toDouble())) > 1 ||
+                        abs(w/2-j) > 0 && abs(w/2-j) < w/2 && (i != 0 && i != h/2 && i != h-1)) {
+                        print(" ")
+                  } else if (j == 0 || j == w/2 || j == w-1) print(if (i == 0 || i == h / 2 || i == h - 1) "*" else "/")
+                  else print("-")
+            }
+            println()
+      }
+}
+
 
 
 
