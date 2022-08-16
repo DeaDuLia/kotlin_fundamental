@@ -60,7 +60,7 @@ fun printFigure (w: Int = 13, h: Int = 9) {
 fun printFigure2 (w: Int = 13, h: Int = 9) {
       for (i in 0 until h) {
             for (j in 0 until w) {
-                  if (kotlin.math.abs(sign((w/2 - j).toDouble()) - sign((h/2 - i).toDouble())) <= 1) {
+                  if (abs(sign((w/2 - j).toDouble()) - sign((h/2 - i).toDouble())) <= 1) {
                         if (j == 0 || j == w/2 || j == w-1) {
                               if (i == 0 || i == h / 2 || i == h - 1) print("*")
                               else print("/")
